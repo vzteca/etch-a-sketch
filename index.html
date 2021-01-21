@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Etch-A-Sketch</title>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+      const container = document.getElementById("container");
+
+      for (let i = 0; i < 16; i++) {
+        const div = document.createElement("div");
+        div.className = "grid";
+        container.appendChild(div);
+      }
+    </script>
+  </body>
+</html>
