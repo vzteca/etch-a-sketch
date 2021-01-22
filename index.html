@@ -3,17 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="container"></div>
-    <script>
-      const container = document.getElementById("container");
-
-      for (let i = 0; i < 16; i++) {
-        const div = document.createElement("div");
-        div.className = "grid";
-        container.appendChild(div);
-      }
-    </script>
+    <div id="content">
+      <div id="header">
+        <h1>Etch-a-sketch</h1>
+        <div id="buttons-top">
+          <button id="btn1">Change size</button>
+          <button id="btn2">Clear grid</button>
+        </div>
+      </div>
+      <div id="container"></div>
+      <div id="button-container">
+        <button id="btn3">Black</button>
+        <button id="btn4">Rainbow</button>
+        <button id="btn5">Eraser</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
